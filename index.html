@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- In head you put meta data, descriptions and links to other stuff -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Exercise in new semantics</title>
-    <meta name="description" content="TBD">
+    <title>Exercise in HTML5 semantics</title>
+    <meta name="description" content="Lazydog">
     <meta name="author" content="Alexander Lundqvist">
     <link rel="stylesheet" href="style.css">
-  </head>
 
+<!-- This is the content that will be shown on the website -->
   <body>
-    <header>
+    <!-- In header you put both page name and/or navigation -->
+    <header class="header">
       <h1>Super awesome name!</h1>
+      <nav class="primary-navbar">
+        <h1>Navigation</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="functest.html">Functions</a></li>
+          <li><a href="info.html">Info</a></li>
+        </ul>
     </header>
+    <!-- Put main here -->
     <main>
-      <h2>Main stuff goes in here.
+      <h2>Main stuff goes in here.</h2>
+      <!-- Article = "blocks" or "divs" -->
+      <article class="primary-article">
+        <!-- Section = "elements" or "spans" -->
+        <section class="primary-section">
+          <h5>This is an h5 heading</h5>
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere
+            shed everywhere stretching attack your
+            ankles chase the red dot, hairball run catnip
+            eat the grass sniff.
+          </p>
+        </section>
+        <section class="primary-section">
+          <h5>This is an h5 heading</h5>
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere
+            shed everywhere stretching attack your
+            ankles chase the red dot, hairball run catnip
+            eat the grass sniff.
+          </p>
+        </section>
+        <section class="primary-section">
+          <h5>This is an h5 heading</h5>
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere
+            shed everywhere stretching attack your
+            ankles chase the red dot, hairball run catnip
+            eat the grass sniff.
+          </p>
+        </section>
+      </article>
+      <!-- Put aside after the articles -->
+      <aside>
+        <section class="aside-section">
+          <h2>Aside</h2>
+          <p>
+            This section contains supplementary info to
+            the main content that may or may not be related.
+            You could see it as a sidebar!
+            It could contain for example:
+            <ul>
+              <li>Links</li>
+              <li>Settings</li>
+              <li>Forms</li>
+            </ul>
+          </p>
+        </section>
+    </aside>
     </main>
-    <footer>
-      <h3>Put extra info and other stuff here.</h2>
+    <!-- You put the footer down here -->
+    <footer class="footer">
+      <h3>Put extra info and other stuff here.</h3>
     </footer>
   </body>
