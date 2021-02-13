@@ -1,30 +1,149 @@
-/* Primary CSS for the website across multiple documents */
+/* ---------- Primary CSS for the website across multiple documents --------- */
+
+html{
+  background-color: #525252;
+  /* Standard font for the whole website */
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 body{
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  /* Using grids to style */
+  display: grid;
+  grid-template:
+    "header  header  header"
+    "nav     main    sidebar"
+    "footer  footer  footer" /
+     200px    1fr    200px;
+  grid-gap: 20px 40px;
 
 }
 
-.header{
+/* ------------------------ Header and children CSS ------------------------- */
+header{
+  grid-area: header;
+  background-color: #525252;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+
+  display: grid;
+  grid-template:
+   "logo ........... ......" 1fr
+   "logo title  primary-nav" auto
+   "logo ........... ......" 1fr /
+   200px 1fr         400px;
+   grid-gap: 0 40px;
 
 }
 
-.primary-navbar{
+#logo{
+  grid-area: logo;
+  width: 75px;
+  height: 75px;
+  float: left;
+  padding: 10px;
+  padding-left: 20px;
+}
 
+/* This class fixes the issue with centering h1 */
+.h-center-wrapper{
+  grid-area: title;
+  text-align: center;
+  flex: 0.7;
+}
+
+/* This is a case of styling a child (parent>child) */
+.h-center-wrapper>h1{
+  color: white;
+}
+
+.primary-nav{
+  grid-area: primary-nav;
+  width: 100%;
+  background-color: #525252;
+  color: white;
+  padding: 10px;
+
+}
+
+.primary-nav>ul{
+  display: grid;
+  grid-template:
+  "link link link" auto/
+  100px 100px 100px;
+  grid-gap: 0 20px;
+}
+
+.primary-nav>li{
+  grid-area: link;
+}
+
+header>ul,li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  background-color: #323232;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #E0E0E0;
+  color: #323232;
+}
+
+.secondary-nav{
+  grid-area: nav;
+  background-color: red;
+  padding: 20px;
+}
+
+/* --------------------- Main content and children CSS ---------------------- */
+main{
+  grid-area: main;
+  background-color: #E0E0E0;
+  padding: 20px;
+  padding-top: 20px;
 }
 
 .primary-article{
+  padding: 10px;
 
 }
 
 .primary-section{
-
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
 }
 
-.footer{
-
+/* ------------------------ Footer and children CSS ------------------------- */
+footer{
+  grid-area: footer;
+  background-color: #323232;
+  color: white;
+  padding: 20px;
 }
-/* Additional CSS for specific elements */
 
+
+/* ------------------------- Aside and children CSS ------------------------- */
+aside{
+  grid-area: sidebar;
+}
 .aside-section{
-
+  border-style: solid;
+  border-color: #323232;
+  background-color: white;
+  padding: 10px;
 }

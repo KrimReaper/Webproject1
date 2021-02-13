@@ -9,19 +9,39 @@
     <meta name="author" content="Alexander Lundqvist">
     <link rel="stylesheet" href="style.css">
 
+    <!-- This segment is for adding a favicon to the website -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+  </head>
 <!-- This is the content that will be shown on the website -->
   <body>
     <!-- In header you put both page name and/or navigation -->
-    <header class="header">
-      <h1>Super awesome name!</h1>
-      <nav class="primary-navbar">
-        <h1>Navigation</h1>
+    <header>
+      <span class="h-center-wrapper"><h1>Super awesome name!</h1></span>
+      <img id="logo" alt="Racoon logo" src="media/logo.png" />
+      <nav class="primary-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="functest.html">Functions</a></li>
-          <li><a href="info.html">Info</a></li>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="functest.html">Functions</a></li>
+          <li><a class="nav-link" href="info.html">Info</a></li>
         </ul>
+      </nav>
     </header>
+
+    <!-- This is a secondary nav/sidebar for on page navigation -->
+    <nav>
+      This is a secondary navigation panel.
+      <ul>
+        <li><a href="#">Navlink</a></li>
+        <li><a href="#">Navlink</a></li>
+        <li><a href="#">Navlink</a></li>
+        <li><a href="#">Navlink</a></li>
+        <li><a href="#">Navlink</a></li>
+      </ul>
+    </nav>
+
     <!-- Put main here -->
     <main>
       <h2>Main stuff goes in here.</h2>
@@ -34,7 +54,9 @@
             Kitty ipsum dolor sit amet, shed everywhere
             shed everywhere stretching attack your
             ankles chase the red dot, hairball run catnip
-            eat the grass sniff.
+            eat the grass sniff. Purr jump eat the grass
+            rip the couch scratched sunbathe, shed everywhere
+            rip the couch sleep in the sink fluffy fur catnip scratched.
           </p>
         </section>
         <section class="primary-section">
@@ -43,7 +65,9 @@
             Kitty ipsum dolor sit amet, shed everywhere
             shed everywhere stretching attack your
             ankles chase the red dot, hairball run catnip
-            eat the grass sniff.
+            eat the grass sniff. Purr jump eat the grass
+            rip the couch scratched sunbathe, shed everywhere
+            rip the couch sleep in the sink fluffy fur catnip scratched.
           </p>
         </section>
         <section class="primary-section">
@@ -52,7 +76,9 @@
             Kitty ipsum dolor sit amet, shed everywhere
             shed everywhere stretching attack your
             ankles chase the red dot, hairball run catnip
-            eat the grass sniff.
+            eat the grass sniff. Purr jump eat the grass
+            rip the couch scratched sunbathe, shed everywhere
+            rip the couch sleep in the sink fluffy fur catnip scratched.
           </p>
         </section>
       </article>
@@ -75,7 +101,12 @@
     </aside>
     </main>
     <!-- You put the footer down here -->
-    <footer class="footer">
-      <h3>Put extra info and other stuff here.</h3>
+    <footer>
+      <h4>Put extra info, links and other stuff here.</h3>
+        <ul>
+          <li>Social media links</li>
+          <li>Footnotes</li>
+          <li>Copyright information</li>
+        </ul>
     </footer>
   </body>
