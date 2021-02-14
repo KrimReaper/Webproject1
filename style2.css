@@ -14,8 +14,7 @@ body{
   display: grid;
   grid-template:
     "header  header  header"
-    "......  ......  ......" 50px
-    "nav     main    main"
+    "nav     main    sidebar"
     "footer  footer  footer" /
      200px    1fr    200px;
   grid-gap: 20px 40px;
@@ -36,7 +35,7 @@ header{
   grid-template:
    "logo title  primary-nav" auto /
    200px 1fr         400px;
-   grid-gap: 40px;
+   grid-gap: 0 40px;
 
 }
 
@@ -88,7 +87,7 @@ header>ul,li{
   padding: 0;
 }
 
-.navlink:link, .navlink:visited {
+a:link, a:visited {
   background-color: #323232;
   color: white;
   padding: 10px 20px;
@@ -97,7 +96,7 @@ header>ul,li{
   display: inline-block;
 }
 
-.navlink:hover, .navlink:active {
+a:hover, a:active {
   background-color: #E0E0E0;
   color: #323232;
 }
@@ -143,6 +142,6 @@ aside{
 .aside-section{
   border-style: solid;
   border-color: #323232;
-  background-color: yellow;
+  background-color: white;
   padding: 10px;
 }
